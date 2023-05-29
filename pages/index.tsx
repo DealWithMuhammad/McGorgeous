@@ -33,7 +33,7 @@ const Home = ({ categories, products }: Props) => {
     <div className="bg-cover">
       <Head>
         <title>McGorgeous</title>
-        <link rel="icon" href="/Logo.png" />
+        <link rel="icon" href="/Logo.jpg" />
       </Head>
 
       <TransitionEffect/>

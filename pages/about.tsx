@@ -13,7 +13,7 @@ const about = () => {
       <>       
            <Head>
         <title>McGorgeous</title>
-        <link rel="icon" href="/Logo.png" />
+        <link rel="icon" href="/Logo.jpg" />
       </Head>
             <TransitionEffect/>
       <Navbar />

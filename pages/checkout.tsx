@@ -67,7 +67,7 @@ function Checkout() {
     <div className="min-h-screen overflow-hidden bg-[#E7ECEE]">
       <Head>
         <title>McGorgeous</title>
-        <link rel="icon" href="/logo.jpg" />
+        <link rel="icon" href="/Logo.jpg" />
       </Head>
       <Navbar />
       <main className="mx-auto max-w-5xl pb-24">
