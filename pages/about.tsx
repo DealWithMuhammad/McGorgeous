@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar"
 import TransitionEffect from '../components/TransitionEffect';
 import Footer from '../components/Footer';
 import Head from 'next/head';
+import Image from "next/image";
 
 const about = () => {
     return (

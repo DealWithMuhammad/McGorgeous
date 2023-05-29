@@ -286,6 +286,6 @@ I specialize in creating stunning still life compositions, capturing the intrica
     </div>
       </>
   );
-}
+};
 
 export default Landing;
