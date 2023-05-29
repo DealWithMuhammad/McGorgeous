@@ -19,7 +19,7 @@ function Landing() {
           <span className="block text-white">
             <Typewriter
                 options={{
-                  strings: ['DIVINE MASTERPIECES', 'SPIRITUAL CANVASES', 'SACRED ARTISTRY','PORTRAIT', 'LANDSCAPE' ],
+                  strings: ['MASTERPIECES', 'SPIRITUAL CANVASES', 'SACRED ARTISTRY','PORTRAIT', 'LANDSCAPE' ],
                   autoStart: true,
                   loop: true,
                 }}
