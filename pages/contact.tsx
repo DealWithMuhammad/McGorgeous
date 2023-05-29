@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { AiOutlineHome, AiOutlineRight } from 'react-icons/ai';
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
 import Head from 'next/head';
+import Basket from '../components/Basket';
 
 const ContactForm = () => {
   const [fullName, setFullName] = useState('');
@@ -23,7 +24,8 @@ const ContactForm = () => {
         <link rel="icon" href="/Logo.jpg" />
       </Head>
               <TransitionEffect/>
-            <Navbar/>
+        <Navbar />
+        <Basket />
             
  <div className="flex items-center justify-center mb-8">
         <div className="relative w-full">

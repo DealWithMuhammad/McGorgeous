@@ -7,6 +7,7 @@ import TransitionEffect from '../components/TransitionEffect';
 import Footer from '../components/Footer';
 import Head from 'next/head';
 import Image from "next/image";
+import Basket from '../components/Basket';
 
 const about = () => {
     return (
@@ -16,7 +17,8 @@ const about = () => {
         <link rel="icon" href="/Logo.jpg" />
       </Head>
             <TransitionEffect/>
-      <Navbar />
+        <Navbar />
+        <Basket />
     <div className="container mx-auto px-4  md:py-5">
       <div className="flex items-center justify-center mb-8">
         <div className="relative w-full">
