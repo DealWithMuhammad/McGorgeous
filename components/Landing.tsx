@@ -234,7 +234,7 @@ I specialize in creating stunning still life compositions, capturing the intrica
 </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div  data-aos="fade-right" className="relative">
+      <div  data-aos="fade-down" className="relative">
         <img
           src="/hero.jpg" // Replace with the image URL for your project
           alt="Project 1"
@@ -262,7 +262,7 @@ I specialize in creating stunning still life compositions, capturing the intrica
           </div>
         </div>
       </div>
-      <div  data-aos="fade-left" className="relative">
+      <div  data-aos="fade-down" className="relative">
         <img
           src="/cave.jpg" // Replace with the image URL for your project
           alt="Project 3"
