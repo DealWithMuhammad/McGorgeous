@@ -10,14 +10,120 @@
 
 @layer base {
   body {
-    @apply font-body text-[#232428];
+    @apply font-body text-[#232428] bg-gray-100;
   }
 }
+ .button:hover .absolute {
+    transform: translateX(0);
+    opacity: 1;
+  }
 
+  .button{
+    background: rgba(28, 31, 43, 0.37);
+      border: 1px solid #D8D8D8;
+      padding: 1.25rem 3.125rem;
+      position: relative;
+      overflow: hidden;
+      border-radius: 0.1875rem;
+      transition: 0.45s all cubic-bezier(0.55, 0, 0.1, 1);
+  }
+
+   .button-child{
+    color: white;
+    text-transform: uppercase;
+    pointer-events: none;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    letter-spacing: 0.09375rem;
+    position: relative;
+    z-index: 2;
+    transition: 0.45s all cubic-bezier(0.55, 0, 0.1, 1);
+  }
+.bg-cover{
+    /* The image used */
+      background-image:
+      linear-gradient(rgb(52 52 52 / 60%), rgb(7 9 32 / 80%)),
+      /*  center center,*/
+         url("../assets/hero.jpg");
+    
+      /* Full height */
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: sticky;
+      height: 100vh;
+    }
+ 
+.span{
+  -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    color: transparent
+}    
+
+/* Navbar */
+.navigation{
+      background: rgba(14, 29, 52, 0.9);
+        padding: 15px 0;
+        box-shadow: 0px 2px 20px rgba(14, 29, 52, 0.1);
+}
+
+/* Hamburger */
+.hamburger-container {
+  position: relative;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hamburger:hover{
+  width: 30px;
+}
+
+
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger.active .line1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .line2 {
+  opacity: 0;
+}
+
+.hamburger.active .line3 {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+/* Contact*/
+.bg-cover2{
+  background-position: 50%;
+    background-image: url('https://mdbootstrap.com/img/new/textures/full/284.jpg');
+    height: 300px;
+}
+.wrap-class{
+margin-top: -100px;
+  background: hsla(0, 0%, 100%, 0.8);
+  backdrop-filter: blur(30px);
+}
 @layer components {
   /* NavbarStyling */
   .headerLink{
-    @apply cursor-pointer opacity-75 transition hover:opacity-100;
+    @apply cursor-pointer opacity-75 transition hover:opacity-100 ;
   }
 
   .headerIcon{
@@ -28,7 +134,7 @@
   .link{
     @apply relative cursor-pointer text-lg font-medium before:absolute before:inset-x-0
     before:-bottom-1.5 before:h-0.5 before:origin-left before:scale-x-0 before:transform 
-    before:rounded-bl before:bg-black before:transition-all before:duration-200 
+    before:rounded-bl before:bg-white before:transition-all before:duration-200 
     hover:before:scale-x-100;
   }
 
@@ -38,7 +144,7 @@
      .borderGradient {
        text-align: center;
        padding-bottom: 5px;
-       background: linear-gradient(to right, #ec4899, #8b5cf6) left bottom no-repeat;
+       background: linear-gradient(to right, #405189, #eeedee) left bottom no-repeat;
        background-size: 100% 2px;
      }
 

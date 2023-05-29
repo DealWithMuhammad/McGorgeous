@@ -11,8 +11,9 @@ import {CiMail, CiInstagram} from "react-icons/ci"
 import { useSelector } from "react-redux";
 import { selectBasketItems } from "@/redux/basketSlice";
 import Logo from "../assets/Logo.png"; // Update the path to your image file
+let isScrolled = false;
 
-function Header() {
+function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -21,17 +22,16 @@ function Header() {
 
 
 
-    const Home = './'
-  const about = './about';
-  const projects = './projects'
-  const contact = './contact'
-
+    const Home = './';
+    const about = './about';
+    const projects = './projects';
+    const contact = './contact'
   
   return (
-    <header className="sticky top-0 z-30 flex w-full items-center justify-between p-4 ">
-      <div className="flex items-center justify-center">
+    <header className="sticky top-0 z-30 flex w-full py-6 items-center justify-between p-4 navigation ">
+      <div className="flex items-center justify-center px-4">
         {/* Hamburger menu */}
-        <div className="hamburger-container" onClick={toggleMenu}>
+        <div className="hamburger-container "  onClick={toggleMenu}>
           <div
             className={`hamburger ${isMenuOpen ? "active" : ""}`}
           >
@@ -57,13 +57,13 @@ function Header() {
           <p className="headerLink" onClick={toggleMenu}>
             ABOUT
             </p>
-          </Link>
-          <Link href={projects}>
+                  </Link>
+                  <Link href={projects}>
           <p className="headerLink" onClick={toggleMenu}>
             PROJECTS
-            </p>
-            </Link>
-         <Link href={contact}>
+                      </p>
+                      </Link>
+          <Link href={contact}>
                   <p className="headerLink" onClick={toggleMenu}>
             CONTACT
                       </p>
@@ -101,7 +101,7 @@ function Header() {
         <CiInstagram/>
       </a>
         </div>
-    <div className="text-3xl text-white">
+    <div className="text-3xl text-white pr-4">
       <a
         href="https://www.instagram.com/_mariawaseem_arts/"
         target="_blank"
@@ -119,4 +119,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;

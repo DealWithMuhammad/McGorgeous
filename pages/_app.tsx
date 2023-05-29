@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import { store } from "../redux/store";
 import { Toaster } from "react-hot-toast";
 import { SessionProvider } from "next-auth/react";
+import  AOSWrapper  from "../components/AOS"
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   return (
@@ -11,10 +12,14 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
     <SessionProvider session={session}>
       <Provider store={store}>
         <Toaster />
-        <Component {...pageProps} />
+        < AOSWrapper>
+          <Component {...pageProps} />
+        </ AOSWrapper>
       </Provider>
     </SessionProvider>
+    
   );
+  
 }
 
 export default MyApp;

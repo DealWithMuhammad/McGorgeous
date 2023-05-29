@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Header from "../components/Header";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -11,6 +10,7 @@ import { selectBasketItems, selectBasketTotal } from "../redux/basketSlice";
 import CheckoutProduct from "../components/CheckoutProduct";
 import { fetchPostJSON } from "../utils/api-helpers";
 import getStripe from "../utils/get-stripejs";
+import Navbar from "../components/Navbar";
 
 function Checkout() {
   const items = useSelector(selectBasketItems);
@@ -66,16 +66,16 @@ function Checkout() {
   return (
     <div className="min-h-screen overflow-hidden bg-[#E7ECEE]">
       <Head>
-        <title>Bag - Apple</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>McGorgeous</title>
+        <link rel="icon" href="/logo.jpg" />
       </Head>
-      <Header />
+      <Navbar />
       <main className="mx-auto max-w-5xl pb-24">
         <div className="px-5">
           <h1 className="my-4 text-3xl font-semibold lg:text-4xl">
             {items.length > 0 ? "Review your bag." : "Your bag is empty."}
           </h1>
-          <p className="my-4">Free delivery and free returns.</p>
+          <p className="my-4">Free delivery.</p>
 
           {items.length === 0 && (
             <Button
@@ -107,10 +107,6 @@ function Checkout() {
                   <div className="flex justify-between">
                     <div className="flex flex-col gap-x-1 lg:flex-row">
                       Estimated tax for:{" "}
-                      <p className="flex cursor-pointer items-end text-blue-500 hover:underline">
-                        Enter zip code
-                        <ChevronDownIcon className="h-6 w-6" />
-                      </p>
                     </div>
                     <p>$ -</p>
                   </div>
@@ -129,20 +125,6 @@ function Checkout() {
                   How would you like to check out?
                 </h4>
                 <div className="flex flex-col gap-4 md:flex-row">
-                  <div className="order-2 flex flex-1 flex-col items-center rounded-xl bg-gray-200 p-8 py-12 text-center">
-                    <h4 className="mb-4 flex flex-col text-xl font-semibold">
-                      <span>Pay Monthly</span>
-                      <span>with Apple Card</span>
-                      <span>
-                        $283.16/mo. at 0% APR<sup className="-top-1">◊</sup>
-                      </span>
-                    </h4>
-                    <Button title="Check Out with Apple Card Monthly Installments" />
-                    <p className="mt-2 max-w-[240px] text-[13px]">
-                      $0.00 due today, which includes applicable full-price
-                      items, down payments, shipping, and taxes.
-                    </p>
-                  </div>
 
                   <div className="flex flex-1 flex-col items-center space-y-8 rounded-xl bg-gray-200 p-8 py-12 md:order-2">
                     <h4 className="mb-4 flex flex-col text-xl font-semibold">
