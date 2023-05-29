@@ -63,7 +63,6 @@ const projects = ({ categories, products }: Props) => {
                                 <Tab.Panel className="tabPanel">{showProducts(0)}</Tab.Panel>
                                 <Tab.Panel className="tabPanel">{showProducts(1)}</Tab.Panel>
                                 <Tab.Panel className="tabPanel">{showProducts(2)}</Tab.Panel>
-                                <Tab.Panel className="tabPanel">{showProducts(3)}</Tab.Panel>
                             </Tab.Panels>
                         </Tab.Group>
                     </div>
