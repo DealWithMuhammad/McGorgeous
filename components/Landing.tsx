@@ -53,7 +53,7 @@ function Landing() {
           Whether you're looking for a stunning portrait, a breathtaking landscape, or a unique custom artwork, I have the expertise and creativity to exceed your expectations. Step into the world of art and let me create something truly exceptional for you.
         </p>
       </div>
-      <div data-aos="fade-left">
+      <div data-aos="fade-up">
         <Image
           src={Painting} // Replace with the image URL for the artist
           alt="Artist"
@@ -100,7 +100,7 @@ function Landing() {
           </div>
         </div>
       </li>
-      <li data-aos="fade-up-left">
+      <li data-aos="fade-up">
         <div className="bg-white p-6 rounded-lg shadow-md flex items-center">
                   <div>
                        <div className="flex flex-wrap"> 
@@ -141,7 +141,7 @@ I specialize in creating stunning still life compositions, capturing the intrica
           </div>
         </div>
       </li>
-      <li data-aos="fade-down-left">
+      <li data-aos="fade-up">
         <div className="bg-white p-6 rounded-lg shadow-md flex items-center">
                   <div>
                     <div className="flex flex-wrap">
@@ -179,7 +179,7 @@ I specialize in creating stunning still life compositions, capturing the intrica
           className="w-64 h-auto rounded-lg"
         />
       </div>
-      <div  data-aos="fade-left">
+      <div  data-aos="fade-up">
         <h3 className="text-lg font-bold mb-2">Bring Your Ideas to Life</h3>
         <p className="text-gray-700 mb-4">
           I specialize in creating custom paintings based on your unique ideas and inspirations. Whether you have a specific concept in mind or just a general theme, I can bring your vision to life on canvas.
