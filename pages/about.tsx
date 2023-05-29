@@ -49,7 +49,7 @@ const about = () => {
             <p className="text-gray-700 mb-4">I explore a wide range of colors and techniques, allowing me to create vibrant and visually appealing paintings. Colors have the ability to evoke emotions and set the tone for a piece of artwork. Whether it's a vivid sunset or a subtle play of light and shadow, I strive to capture the essence of a subject through the careful selection and application of colors.</p>
             <p className="text-gray-700">I believe that colors have the power to communicate and elicit responses from viewers, allowing them to connect with the artwork on a deeper level. Through my use of colors, I aim to create an immersive experience that engages the senses and sparks the imagination.</p>
           </div>
-          <div data-aos="fade-left" className="w-full md:w-1/2 md:pl-4 mt-4 md:mt-0">
+          <div data-aos="fade-up" className="w-full md:w-1/2 md:pl-4 mt-4 md:mt-0">
             <img
               src="/art.jpg" // Replace with your own image URL
               alt="Palette Image"
@@ -63,7 +63,7 @@ const about = () => {
             <p className="text-gray-700 mb-4">Art has the power to evoke emotions and create a profound impact on the viewer. I strive to establish an emotional connection with the audience through my artwork. Whether it's a portrait that captures the depth of human emotions or a landscape that evokes a sense of serenity, I want viewers to feel a range of emotions when they interact with my paintings.</p>
             <p className="text-gray-700">By portraying subjects with sensitivity and attention to detail, I aim to create a dialogue between the artwork and the viewer. I want my paintings to be a catalyst for introspection, inviting viewers to reflect on their own experiences, memories, and aspirations. Through this emotional connection, I hope to inspire and leave a lasting impression on those who engage with my art.</p>
           </div>
-          <div data-aos="fade-left" className="w-full md:w-1/2 md:pl-4 mt-4 md:mt-0">
+          <div data-aos="fade-up" className="w-full md:w-1/2 md:pl-4 mt-4 md:mt-0">
             <img
               src="/face.jpg" // Replace with your own image URL
               alt="Emotional Image"
