@@ -31,7 +31,7 @@ function Product({ product }: Props) {
           </div>
 
           <div
-            className="flex h-16 w-16 flex-shrink-0 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-pink-500 to-violet-500 md:h-[70px] md:w-[70px]"
+            className="flex h-16 w-16 flex-shrink-0 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-violet-500 md:h-[70px] md:w-[70px]"
             onClick={addItemToBasket}
           >
             <ShoppingCartIcon className="h-8 w-8 text-white" />
@@ -59,7 +59,7 @@ function Product({ product }: Props) {
         </div>
 
         <div
-          className="flex h-16 w-16 flex-shrink-0 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-pink-500 to-violet-500 md:h-[70px] md:w-[70px]"
+          className="flex h-16 w-16 flex-shrink-0 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-violet-500 md:h-[70px] md:w-[70px]"
           onClick={addItemToBasket}
         >
           <ShoppingCartIcon className="h-8 w-8 text-white" />

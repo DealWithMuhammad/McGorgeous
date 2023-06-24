@@ -81,7 +81,7 @@ function Navbar() {
             <Image
               alt="logo"
               src={Logo}
-              width={240}
+              width={200}
               height={100}
               objectFit="contain"
             />
