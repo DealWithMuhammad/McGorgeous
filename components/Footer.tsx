@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container mx-auto mt-4 text-center">
-        <p className="text-sm">© Muhammad 2023. All rights reserved.</p>
+        <p className="text-sm">© Maria Waseem 2023. All rights reserved.</p>
       </div>
     </footer>
   );
