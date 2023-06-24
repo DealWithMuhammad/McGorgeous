@@ -13,7 +13,7 @@ const about = () => {
     return (
       <>       
            <Head>
-        <title>McGorgeous</title>
+        <title>Maria-Waseem</title>
         <link rel="icon" href="/Logo.jpg" />
       </Head>
             <TransitionEffect/>

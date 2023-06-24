@@ -30,7 +30,7 @@ const projects = ({ categories, products }: Props) => {
     return (
         <>
                <Head>
-        <title>McGorgeous</title>
+        <title>Maria-Waseem</title>
         <link rel="icon" href="/Logo.jpg" />
       </Head>
             <Navbar />

@@ -32,7 +32,7 @@ const Home = ({ categories, products }: Props) => {
   return (
     <div className="bg-cover">
       <Head>
-        <title>McGorgeous</title>
+        <title>Maria-Waseem</title>
         <link rel="icon" href="/Logo.jpg" />
       </Head>
 

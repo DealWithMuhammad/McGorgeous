@@ -66,7 +66,7 @@ function Checkout() {
   return (
     <div className="min-h-screen overflow-hidden bg-[#E7ECEE]">
       <Head>
-        <title>McGorgeous</title>
+        <title>Maria-Waseem</title>
         <link rel="icon" href="/Logo.jpg" />
       </Head>
       <Navbar />

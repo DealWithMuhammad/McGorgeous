@@ -81,7 +81,7 @@ function Header() {
             <Image
               alt="logo"
               src={Logo}
-              width={200}
+              width={240}
               height={100}
               objectFit="contain"
             />
