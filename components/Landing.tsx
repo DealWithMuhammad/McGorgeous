@@ -277,8 +277,8 @@ I specialize in creating stunning still life compositions, capturing the intrica
         </div>
       </div>
     </div>
-    <div className="text-center mt-6">
-      <a href="./projects" className="bg-blue-500 text-white font-[500] py-2 px-4 rounded hover:bg-blue-600">View All Projects</a>
+    <div className="text-center mt-9">
+      <a href="./projects" className="bg-[#405189] text-white text-sm font-[500] py-4 px-6 rounded hover:bg-[#0f1735]">View All Projects</a>
     </div>
   </div>
 </section>
