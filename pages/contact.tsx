@@ -8,9 +8,15 @@ import Head from 'next/head';
 import Basket from '../components/Basket';
 import { client } from "../client"
 
+interface FormData {
+  username: string;
+  email: string;
+  message: string;
+}
+
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
+  const [formData, setFormData] = useState<FormData>({
+    username: "",
     email: "",
     message: "",
   });
@@ -19,7 +25,7 @@ const ContactForm = () => {
 
   const { username, email, message } = formData;
 
-  const handleChangeInput = (e) => {
+  const handleChangeInput = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
@@ -43,17 +49,17 @@ const ContactForm = () => {
       .catch((err) => console.log(err));
   };
 
-    return (
-      <>
-           <Head>
+  return (
+    <>
+      <Head>
         <title>Maria-Waseem</title>
         <link rel="icon" href="/Logo.jpg" />
       </Head>
-              <TransitionEffect/>
-        <Navbar />
-        <Basket />
-            
- <div className="flex items-center justify-center mb-8">
+      <TransitionEffect/>
+      <Navbar />
+      <Basket />
+      
+      <div className="flex items-center justify-center mb-8">
         <div className="relative w-full">
           <img
             src="/hero.jpg" // Replace with your own image URL
@@ -64,17 +70,17 @@ const ContactForm = () => {
             Contact
           </div>
         </div>
-          </div>
-                <div className="flex items-center mx-4 mb-4">
+      </div>
+      
+      <div className="flex items-center mx-4 mb-4">
         <AiOutlineHome className="text-gray-500 text-xl" />
         <AiOutlineRight className="text-gray-500 mx-2 text-xs" />
-        <span className="text-gray-500 font-light text-sm">Home / Contact</span></div>
+        <span className="text-gray-500 font-light text-sm">Home / Contact</span>
+      </div>
 
+      <h2 className="text-2xl head-text font-semibold mb-4 text-center">GET IN TOUCH WITH US</h2>
 
-          <h2 className="text-2xl head-text font-semibold mb-4 text-center">GET IN TOUCH WITH US</h2>
-
-
-  {!isFormSubmitted ? (
+      {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
           <div className="app__flex">
             <input
@@ -113,12 +119,10 @@ const ContactForm = () => {
         <div>
           <h3 className="head-text">Thank you for getting in touch!</h3>
         </div>
-        )}
-        
-
-        
-            <Footer/>
-            </>
+      )}
+      
+      <Footer/>
+    </>
   );
 };
 
