@@ -79,7 +79,16 @@ const ContactForm = () => {
       </div>
 
       <h2 className="text-2xl head-text font-semibold mb-4 text-center">GET IN TOUCH WITH US</h2>
-
+      <div className="md:flex ml-4 justify-around mt-10">
+          <div className="flex items-center mb-4">
+            <FaPhone className="mr-2" />
+            <span>+60 1139865270</span>
+          </div>
+          <div className="flex items-center mb-4">
+            <FaEnvelope className="mr-2" />
+            <span>mariawaseem334@gmail.com</span>
+      </div>
+      </div>
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
           <div className="app__flex">
@@ -117,7 +126,7 @@ const ContactForm = () => {
         </div>
       ) : (
         <div>
-          <h3 className="head-text">Thank you for getting in touch!</h3>
+          <h3 className="text-2xl head-text font-semibold mb-4 text-center">Thank you for getting in touch!</h3>
         </div>
       )}
       
