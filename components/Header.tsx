@@ -28,10 +28,10 @@ function Header() {
 
   
   return (
-    <header className="sticky top-0 z-[99999999999999] flex w-full items-center justify-between p-4 ">
-      <div className="flex items-center justify-center">
+    <header className="sticky top-0 z-40 flex w-full items-center justify-between p-4 ">
+      <div className="flex items-center justify-center" onClick={toggleMenu}>
         {/* Hamburger menu */}
-        <div className="hamburger-container" onClick={toggleMenu}>
+        <div className="hamburger-container" >
           <div
             className={`hamburger ${isMenuOpen ? "active" : ""}`}
           >
