@@ -101,14 +101,6 @@ function Header() {
         <CiInstagram/>
       </a>
         </div>
-    <div className="text-3xl text-white">
-      <a
-        href="https://www.instagram.com/_mariawaseem_arts/"
-        target="_blank"
-      >
-        <CiMail />
-      </a>
-        </div>
         
           
 
