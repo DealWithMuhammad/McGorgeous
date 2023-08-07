@@ -28,7 +28,7 @@ function Header() {
 
   
   return (
-    <header className="z-[99999999999] flex items-center justify-between pt-8 p-6 ">
+    <header className="z-30 flex items-center justify-between pt-8 p-6 ">
       <div className="flex justify-center">
         {/* Hamburger menu */}
         <div className="hamburger-container" >
@@ -75,9 +75,9 @@ function Header() {
           />
         </div>
       </div>
-      <div className="flex-1 items-center justify-center flex">
+      <div className="">
                 <Link href="/">
-          <div className="relative h-10 cursor-pointer opacity-100 transition">
+          <div className="h-10">
             <Image
               alt="logo"
               src={Logo}
@@ -87,8 +87,7 @@ function Header() {
           </div>
         </Link>
       </div>
-      <div className="flex items-center justify-center gap-x-5 md:gap-x=8">
-
+ 
         
 
         
@@ -101,11 +100,6 @@ function Header() {
       </a>
         </div>
         
-          
-
-        
-
-      </div>
     </header>
   );
 }

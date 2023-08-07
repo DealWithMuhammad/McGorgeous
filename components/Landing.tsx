@@ -12,7 +12,7 @@ function Landing() {
   return (
     <>
       <TransitionEffect/>
-    <section className="top-0 mx-auto flex h-screen max-w-[1350px] items-center justify-between px-8">
+    <section className="mx-auto flex h-screen items-center justify-between px-8">
       <div className="space-y-8">
         <h1 className="space-y-3 text-5xl font-black tracking-wide lg:text-7xl xl:text-8xl">
             <span className="block span">WE PROVIDE YOU</span>
@@ -30,7 +30,7 @@ function Landing() {
           <div className="space-x-8">
             <Link href={about}>
             <button className="button text-white  font-bold overflow-hidden">
-              <span className="button-child relative  z-10">Explore More</span>
+              <span className="button-child relative">Explore More</span>
               <span className="absolute top-0 left-0 w-full h-full bg-white transform -translate-x-full transition-transform duration-300 opacity-0"></span>
               </button>
               </Link>
