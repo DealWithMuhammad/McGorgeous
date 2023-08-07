@@ -6,13 +6,13 @@ const Footer = () => {
     <footer className="bg-gray-800 text-white py-8">
       <div className="container mx-auto flex justify-center items-center">
         <div className="flex space-x-4">
-          <a href="https://www.instagram.com/_mariawaseem_arts" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white">
+          <a href="https://www.instagram.com/mariawaseem_arts/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white">
             <FaFacebook className="text-2xl" />
           </a>
-          <a href="https://www.instagram.com/_mariawaseem_arts" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white">
+          <a href="https://www.instagram.com/mariawaseem_arts/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white">
             <FaTwitter className="text-2xl" />
           </a>
-          <a href="https://www.instagram.com/_mariawaseem_arts/"
+          <a href="https://www.instagram.com/mariawaseem_arts/"
         target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white">
             <FaInstagram className="text-2xl" />
           </a>
