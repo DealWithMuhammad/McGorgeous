@@ -95,22 +95,13 @@ function Navbar() {
         
     <div className="text-3xl text-white icon">
       <a
-        href="https://www.instagram.com/_mariawaseem_arts/"
+        href="https://www.instagram.com/mariawaseem_arts/"
         target="_blank"
       >
         <CiInstagram/>
       </a>
         </div>
-    <div className="text-3xl text-white pr-4">
-      <a
-        href="https://www.instagram.com/_mariawaseem_arts/"
-        target="_blank"
-      >
-        <CiMail />
-      </a>
-        </div>
-        
-          
+      
 
         
 

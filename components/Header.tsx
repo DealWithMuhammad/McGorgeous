@@ -81,9 +81,8 @@ function Header() {
             <Image
               alt="logo"
               src={Logo}
-              width={240}
+              width={200}
               height={100}
-              objectFit="contain"
             />
           </div>
         </Link>
@@ -93,9 +92,9 @@ function Header() {
         
 
         
-    <div className="text-3xl text-white icon">
+    <div className="text-3xl text-white icon m-[10px]">
       <a
-        href="https://www.instagram.com/_mariawaseem_arts/"
+        href="https://www.instagram.com/mariawaseem_arts/"
         target="_blank"
       >
         <CiInstagram/>
