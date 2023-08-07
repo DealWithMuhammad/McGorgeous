@@ -28,7 +28,7 @@ function Header() {
 
   
   return (
-    <header className="sticky top-0 z-30 flex w-full items-center justify-between p-4 ">
+    <header className="sticky top-0 z-[99999999999999] flex w-full items-center justify-between p-4 ">
       <div className="flex items-center justify-center">
         {/* Hamburger menu */}
         <div className="hamburger-container" onClick={toggleMenu}>

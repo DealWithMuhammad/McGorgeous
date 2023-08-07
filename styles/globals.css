@@ -84,6 +84,7 @@
   cursor: pointer;
   transition: 0.3s;
   margin-left: 10px;
+  z-index: 50;
 }
 
 .hamburger:hover{
